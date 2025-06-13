@@ -75,7 +75,6 @@ Forms can be rendered in templates using Django's templating system.
 
 ```html
 <form method="post">
-    {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Register</button>
 </form>
@@ -116,7 +115,6 @@ Next, render this form in a template `registration.html`.
 
 ```html
 <form method="post">
-    {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Register</button>
 </form>
@@ -207,7 +205,6 @@ def register(request):
 
 ```html
 <form method="post">
-    {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Register</button>
 </form>
